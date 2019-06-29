@@ -72,3 +72,4 @@ with open(output_file, "w") as file:
    file.write("\n")
    file.write(f"Greatest Decrease in Profits: {minDiffMonth} (${minDiff})")
    
+   
