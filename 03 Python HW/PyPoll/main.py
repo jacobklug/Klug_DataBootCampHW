@@ -47,12 +47,16 @@ print(f"O'Tooley: {percentTooley}% ({totalVoteTooley})")
 print(f'--------------------')
 
 if totalVoteKhan > totalVoteCorrey and totalVoteKhan > totalVoteLi and totalVoteKhan > totalVoteTooley:
+    winner = "Khan"
     print(f'Winner: Khan')   
 elif totalVoteCorrey > totalVoteKhan and totalVoteCorrey > totalVoteLi and totalVoteCorrey > totalVoteTooley:
+    winner = "Correy"
     print(f'Winner: Correy')
 elif totalVoteLi > totalVoteKhan and totalVoteLi > totalVoteCorrey and totalVoteLi > totalVoteTooley:
+    winner = "Li"
     print(f'Winner: Li')
 else:
+    winner = "O'Tooley"
     print(f"Winner: O'Tooley")
 print(f'--------------------')
 
@@ -84,8 +88,7 @@ with open(output_file, "w") as file:
    file.write("\n")
    file.write(f"----------------------------")
    file.write("\n")
-   file.write(f"Winner: Khan")
+   file.write(f"Winner: {winner}")
    file.write("\n")
    file.write(f"----------------------------")
    file.write("\n")
-   

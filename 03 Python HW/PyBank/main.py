@@ -64,13 +64,11 @@ with open(output_file, "w") as file:
    file.write("\n")
    file.write(f"Total months: {monthCount}")
    file.write("\n")
-   file.write("Total Profit: ${totalPL}")
+   file.write(f"Total Profit: ${totalPL}")
    file.write("\n")
    file.write(f"Average Change: ${averageDiff}")
    file.write("\n")
    file.write(f"Greatest Increase in Profits: {maxDiffMonth} (${maxDiff})")
    file.write("\n")
    file.write(f"Greatest Decrease in Profits: {minDiffMonth} (${minDiff})")
-   
-   
    
