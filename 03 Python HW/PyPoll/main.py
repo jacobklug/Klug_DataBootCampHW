@@ -55,3 +55,37 @@ elif totalVoteLi > totalVoteKhan and totalVoteLi > totalVoteCorrey and totalVote
 else:
     print(f"Winner: O'Tooley")
 print(f'--------------------')
+
+
+output_file = os.path.join('..', 'PyPoll', 'election_results.csv')
+
+with open(output_file, "w") as file:
+   file.write(f"Election Results")
+   file.write("\n")
+   file.write(f"----------------------------")
+   file.write("\n")
+   file.write(f"Total Votes: {totalVotes}")
+   file.write("\n")
+   file.write(f"----------------------------")
+   file.write("\n")
+   file.write(f"Khan: {percentKhan:.3f}% ({totalVoteKhan})")
+   file.write("\n")
+   file.write(f"----------------------------")
+   file.write("\n")
+   file.write(f"Correy: {percentCorrey:.3f}% ({totalVoteCorrey})")
+   file.write("\n")
+   file.write(f"----------------------------")
+   file.write("\n")
+   file.write(f"Li: {percentLi:.3f}% ({totalVoteLi})")
+   file.write("\n")
+   file.write(f"----------------------------")
+   file.write("\n")
+   file.write(f"O'Tooley: {percentTooley:.3f}% ({totalVoteTooley})")
+   file.write("\n")
+   file.write(f"----------------------------")
+   file.write("\n")
+   file.write(f"Winner: Khan")
+   file.write("\n")
+   file.write(f"----------------------------")
+   file.write("\n")
+   
