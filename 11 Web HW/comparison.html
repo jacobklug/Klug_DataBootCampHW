@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+ 
+    <title>Comparison</title>
+
+</head>
+<body class="body1">
+        
+        <body>
+                <nav class="navbar navbar-default">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="index.html"> 
+                                <span class="nav-color navbaractive">Latitude</span></a>
+                            </div>
+                
+                            
+                            <div class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="maxtempe.html">Max Temperature</a></li>
+                                        <li><a href="humidity.html">Humidity</a></li>
+                                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                                        <li><a href="windspeed.html">Wind Speed</a></li>
+                                    </ul>
+                                </li>
+        
+                                <li><a href="comparison.html"> Comparison</a></li>
+                                <li><a href="data.html"> Data</a></li>           
+                            </div>
+                
+                        </div>      
+                    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-box whiteback">
+                    <h1 class="main-pg-header">Latitude Comparison</h1>
+                    <p class="stronger">Click any plot to get an in-depth analysis.</p>
+                    <hr>
+                    <div class="summary txt">
+                        <div class="row">
+                            <div class="col-sm-5 col-md-6">
+                                <h2 class="text-center">Latitude vs. Max Temperature</h2>
+                                <a href="maxtemp.html">
+                                    <img src="Output_Plots/Max_Temp_vs_Latitude.png" alt="Temp vs. Latitude", class="center compimage">
+                                </a>
+                            </div>
+                            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                                <h2 class="text-center">Latitude vs. Humidity</h2>
+                                <a href="humidity.html">
+                                    <img src="Output_Plots/Humidity_vs_Latitude.png" alt="Humidity vs. Latitude", class="center compimage">
+                                </a>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-5 col-lg-6">
+                                <h2 class="text-center">Latitude vs. Cloudiness</h2>
+                                <a href="cloudiness.html">
+                                    <img src="Output_Plots/Cloudiness_vs_Latitude.png" alt="Cloudiness vs. Latitude", class="center compimage">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+                                <h2 class="text-center">Latitude vs. Wind Speed</h2>
+                                <a href="windspeed.html">
+                                    <img src="Output_Plots/Wind_Speed_vs_Latitude.png" alt="Wind Speed vs. Latitude", class="center compimage">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+        </div>
+    </div>
+    
+
+    
+</body>
+    
+</html>
